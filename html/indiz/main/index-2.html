@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoboSoftwares AG – Indie Game Studio</title>
+  <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/splitting.min.css" />
+  <link rel="stylesheet" href="assets/css/odometer.css" />
+  <link href="assets/css/index.css" rel="stylesheet" />
+</head>
+
+<body class="bg-g900 text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 md:px-15 py-4 lg:py-6 large-container">
+    <div class="flex items-center gap-4">
+      <a href="index-2.html" class="flex items-center gap-2">
+        <img src="assets/images/fav.png" class="max-lg:w-10" alt="BoboSoftwares AG" />
+        <span class="heading-2">BoboSoftwares <span class="text-g300">AG</span></span>
+      </a>
+    </div>
+    <nav class="max-lg:hidden">
+      <ul class="flex gap-6 xl:gap-8 text-base font-medium uppercase">
+        <li><a href="index-2.html" class="hover:text-g300 duration-300">Home</a></li>
+        <li><a href="service-1.html" class="hover:text-g300 duration-300">Services</a></li>
+        <li><a href="shop.html" class="hover:text-g300 duration-300">Shop</a></li>
+      </ul>
+    </nav>
+    <button class="bg-white p-2 rounded-full text-g900 text-2xl hover:bg-g300 duration-300 mobile-menu-open">
+      <i class="ph ph-list"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div
+    class="fixed inset-0 bg-g900 z-50 flex flex-col translate-x-[-100%] duration-500 opacity-0 invisible mobile-menu">
+    <div class="px-6 pt-6 flex justify-between items-center">
+      <a href="index-2.html" class="flex items-center gap-2">
+        <img src="assets/images/fav.png" class="max-lg:w-10" alt="BoboSoftwares AG" />
+        <span class="heading-2">BoboSoftwares <span class="text-g300">AG</span></span>
+      </a>
+      <button class="text-2xl mobile-menu-close"><i class="ph ph-x"></i></button>
+    </div>
+    <div class="flex-1 flex flex-col items-center justify-center gap-6">
+      <a href="index-2.html" class="mobileSubMenuItem text-base hover:text-g300">Home</a>
+      <a href="service-1.html" class="mobileSubMenuItem text-base hover:text-g300">Services</a>
+      <a href="shop.html" class="mobileSubMenuItem text-base hover:text-g300">Shop</a>
+    </div>
+  </div>
+
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden"
+    style="background: url('assets/images/home-2-banner.webp') center/cover no-repeat; height: 80vh;">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 flex items-center justify-center h-full text-center px-4">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-bold text-white">Indie Games Studio</h1>
+        <p class="mt-4 text-lg md:text-xl text-g20 max-w-2xl mx-auto">
+          Crafting unforgettable indie experiences from the heart of Zurich. Play differently.
+        </p>
+        <a href="shop.html"
+          class="inline-block mt-6 px-6 py-3 bg-g300 text-g900 font-semibold hover:bg-g500 transition">
+          Explore Our Shop
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="stp-30 max-w-7xl mx-auto px-4">
+    <h2 class="display-4 uppercase text-center mb-8">About BoboSoftwares AG</h2>
+    <p class="text-center text-g80 max-w-2xl mx-auto">
+      Founded in 1991, BoboSoftwares AG is a boutique indie game studio based in Zurich. We blend artistic vision with
+      cutting‑edge technology to deliver immersive, story‑driven experiences.
+    </p>
+    <div class="grid md:grid-cols-2 gap-8 mt-8">
+      <div class="bg-bg1 p-6 rounded-xl">
+        <h3 class="heading-5 mb-4">Our Vision</h3>
+        <p class="text-g80">To empower players with games that spark imagination, challenge conventions, and leave
+          lasting memories.</p>
+      </div>
+      <div class="bg-bg1 p-6 rounded-xl">
+        <h3 class="heading-5 mb-4">Our Values</h3>
+        <ul class="list-disc list-inside text-g80 space-y-2">
+          <li>Creative Freedom</li>
+          <li>Player‑First Design</li>
+          <li>Quality Over Quantity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="stp-30 bg-bg2 py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="display-4 uppercase text-center mb-8">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-bg1 rounded-xl text-center">
+          <i class="ph ph-game-controller text-4xl text-g300 mb-4"></i>
+          <h3 class="heading-5 mb-2">Game Development</h3>
+          <p class="text-g80">Full‑cycle indie game creation from concept to launch.</p>
+        </div>
+        <div class="p-6 bg-bg1 rounded-xl text-center">
+          <i class="ph ph-paint-brush text-4xl text-g300 mb-4"></i>
+          <h3 class="heading-5 mb-2">Art & Animation</h3>
+          <p class="text-g80">Stylish 2D/3D art that brings worlds to life.</p>
+        </div>
+        <div class="p-6 bg-bg1 rounded-xl text-center">
+          <i class="ph ph-music-note text-4xl text-g300 mb-4"></i>
+          <h3 class="heading-5 mb-2">Audio Design</h3>
+          <p class="text-g80">Immersive soundtracks and sound effects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="stp-30 bg-g300 text-g900 py-12 text-center">
+    <h2 class="display-3 uppercase mb-4">Ready to Play?</h2>
+    <a href="shop.html" class="inline-block px-8 py-3 bg-g900 text-white font-semibold hover:bg-g700 transition">
+      Visit Our Shop
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="stp-30 bg-g900 text-g300 py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="text-center md:text-left mb-4 md:mb-0">
+        <h4 class="heading-4 uppercase mb-2">BoboSoftwares AG</h4>
+        <p>Gertrudstrasse 98<br />8003 Zürich, Switzerland</p>
+      </div>
+      <p class="text-sm">© 2026 BoboSoftwares AG. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/plugins/splitting.js"></script>
+  <script defer src="assets/js/index.js"></script>
+</body>
+
+</html>
