@@ -1402,19 +1402,27 @@
           Build with us?
         </h2>
       </div>
-      <form class="stp-15 sbp-15 flex flex-col gap-4 relative z-20 max-w-[856px] max-xl:px-3 text-base w-full">
+      <form action="https://formsubmit.co/info@bobotech.ch" method="POST"
+        class="stp-15 sbp-15 flex flex-col gap-4 relative z-20 max-w-[856px] max-xl:px-3 text-base w-full">
         <div class="bg-bg1 border border-bg2 rounded-xl py-4 px-6 max-sm:text-sm">
-          <input type="text" placeholder="First Name" class="bg-transparent outline-none text-white w-full" />
+          <input type="text" name="firstName" placeholder="First Name"
+            class="bg-transparent outline-none text-white w-full" required />
         </div>
         <div class="bg-bg1 border border-bg2 rounded-xl py-3 lg:py-4 px-4 lg:px-6 max-sm:text-sm">
-          <input type="text" placeholder="Last Name" class="bg-transparent outline-none text-white w-full" />
+          <input type="text" name="lastName" placeholder="Last Name"
+            class="bg-transparent outline-none text-white w-full" required />
         </div>
         <div class="bg-bg1 border border-bg2 rounded-xl py-3 lg:py-4 px-4 lg:px-6 max-sm:text-sm">
-          <input type="tel" placeholder="Phone Number" class="bg-transparent outline-none text-white w-full" />
+          <input type="email" name="email" placeholder="Email Address"
+            class="bg-transparent outline-none text-white w-full" required />
         </div>
         <div class="bg-bg1 border border-bg2 rounded-xl py-3 lg:py-4 px-4 lg:px-6 max-sm:text-sm">
-          <textarea placeholder="Message"
-            class="bg-transparent outline-none text-white w-full min-h-[100px]"></textarea>
+          <input type="tel" name="phone" placeholder="Phone Number"
+            class="bg-transparent outline-none text-white w-full" />
+        </div>
+        <div class="bg-bg1 border border-bg2 rounded-xl py-3 lg:py-4 px-4 lg:px-6 max-sm:text-sm">
+          <textarea name="message" placeholder="Message"
+            class="bg-transparent outline-none text-white w-full min-h-[100px]" required></textarea>
         </div>
         <label for="check-box" class="flex justify-start items-center gap-2 cursor-pointer">
           <input type="checkbox" class="hidden peer" id="check-box" />
